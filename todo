@@ -1,0 +1,15 @@
+# Todo Seite für Website
+
+## Dropdown menu
+- Schrift auf dem Button schwarz machen
+- Navigation zu services Seite richtig verlinken
+
+## Anmeldeseite
+- !Auswahl der Gruppe über Buttons 
+
+## Spiele
+- Spielbeschreibungen hinzufügen
+
+## Navigation
+- bei navigate to next page wird zuerst currentPageIndex hochgezählt 
+    -> Gruppe 3 geht zuerst zu Station 4, das ist ungeschickt
