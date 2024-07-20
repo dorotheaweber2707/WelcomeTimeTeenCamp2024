@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Time TeenCamp 2024</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <!-- TODO: hier ist der titel noch doof,muss man ändern-->
+            <h1 class="hero__heading"> <span>Gruppen&shy;auswahl</span> <br>Welcome time</h1>
+            <p class="hero__description">#Realationship</p>
+            <!-- <button class="main__btn"><a href="#">Explore</a></button> -->
+        </div>
+    </div>
+
+    <!-- Group Selection Section -->
+    <div class="main" id="group-selection">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Gib deine Gruppennummer ein</h1>
+                <p>
+                    Dadurch erhaltet ihr euren individuellen Guide durch das Spiel. <br><br></p>
+
+
+                <input type="number" id="groupInput" placeholder="Gruppennummer">
+                <!-- hier über Button Auswahl die Gruppennummer auswählen -->
+                <!-- buttons mit beschriftung zwischen 1 und 10 -->
+
+                <div class="button-group">
+                    <!-- Buttons für die Gruppennummern -->
+                    <button onclick="selectGroup(1)">Gruppe 1</button>
+                    <button onclick="selectGroup(2)">Gruppe 2</button>
+                    <button onclick="selectGroup(3)">Gruppe 3</button>
+                    <button onclick="selectGroup(4)">Gruppe 4</button>
+                    <button onclick="selectGroup(5)">Gruppe 5</button>
+                    <button onclick="selectGroup(6)">Gruppe 6</button>
+                    <button onclick="selectGroup(7)">Gruppe 7</button>
+                    <button onclick="selectGroup(8)">Gruppe 8</button>
+                    <button onclick="selectGroup(9)">Gruppe 9</button>
+                    <button onclick="selectGroup(10)">Gruppe 10</button>
+                </div>
+
+                <button class="main__btn" onclick="saveGroupSchedule()">Weiter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Display Schedule Section -->
+    <div class="main" id="schedule" style="display:none;">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Laufplan für Gruppe <span id="groupNumber"></span></h1>
+                <p id="scheduleList"></p>
+                <button class="main__btn" onclick="navigateToNextStation()" id="navigateButton">Let's go</button>
+                <button class="main__btn" onclick="resetGroupSchedule()">Gruppenauswahl löschen</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="navigation.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

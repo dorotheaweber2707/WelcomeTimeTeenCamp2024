@@ -243,17 +243,16 @@
 }
 
 .hero__heading span {
-  background: var(--secondary-color); /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    var(--secondary-color),
-    var(--tertiary-color)
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    var(--secondary-color),
-    var(--tertiary-color)
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--secondary-color);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      var(--secondary-color),
+      var(--tertiary-color));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      var(--secondary-color),
+      var(--tertiary-color));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -263,17 +262,16 @@
 
 .hero__description {
   font-size: 60px;
-  background: var(--description-gradient-end); /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--fourth-color)
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--fourth-color)
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--description-gradient-end);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      var(--primary-color),
+      var(--fourth-color));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      var(--primary-color),
+      var(--fourth-color));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -334,17 +332,16 @@
 
 .main__content h2 {
   font-size: 4rem;
-  background: var(--secondary-color); /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--fourth-color)
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--fourth-color)
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--secondary-color);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      var(--primary-color),
+      var(--fourth-color));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      var(--primary-color),
+      var(--fourth-color));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -376,7 +373,8 @@
 .main__btn a {
   position: relative;
   z-index: 2;
-  color: #fff;
+  /* color: #fff; */
+  color: black;
   text-decoration: none;
 }
 
@@ -484,6 +482,7 @@
     font-size: 2rem;
     margin-top: 3rem;
   }
+
   .main__content h2 {
     font-size: 2rem;
   }
@@ -541,29 +540,26 @@
 }
 
 .services__card:nth-child(2) {
-  background: #1fa2ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #a6ffcb,
-    #12d8fa,
-    #1fa2ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #a6ffcb,
-    #12d8fa,
-    #1fa2ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1fa2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #a6ffcb,
+      #12d8fa,
+      #1fa2ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #a6ffcb,
+      #12d8fa,
+      #1fa2ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .services__card:nth-child(3) {
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
 }
 
 .services__card h2 {
@@ -729,4 +725,105 @@
     padding: 10px;
     width: 100%;
   }
+}
+
+/* Custom styles for group buttons and layout */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* .button-group button {
+
+
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} */
+
+.button-group button {
+  width: 120px;  /* Feste Breite für die Buttons */
+  height: 50px;  /* Feste Höhe für die Buttons */
+  padding: 0;    /* Kein zusätzliches Padding, um die feste Größe zu wahren */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  /* background: -webkit-linear-gradient(to right, var(--fourth-color), var(--primary-color));
+  background: linear-gradient(to right, var(--fourth-color), var(--primary-color)); */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  display: flex;             /* Flexbox, um den Text zu zentrieren */
+  align-items: center;       /* Vertikale Zentrierung */
+  justify-content: center;   /* Horizontale Zentrierung */
+  text-align: center;        /* Textzentrierung innerhalb des Buttons */
+  box-sizing: border-box;    /* Stellt sicher, dass Padding und Border nicht die Gesamtgröße beeinflussen */
+}
+
+.button-group button.selected {
+  background-color: var(--fourth-color);
+}
+
+.button-group button:hover {
+  background-color: var(--fourth-color);
+}
+
+.main__content button{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+  .main__content button.selected {
+    background-color: var(--fourth-color);
+  }
+  
+  .main__content button:hover {
+    background-color: var(--fourth-color);
+  }
+
+  /* Custom styles for radio buttons and layout */
+#choices {
+  margin: 20px 0;
+}
+
+#choices label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#choices input[type="radio"] {
+  margin-right: 10px;
+}
+
+#choices input[disabled] {
+  cursor: not-allowed;
+}
+
+
+/*  responsive Bild section */
+.responsive-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.responsive-img-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

@@ -1,15 +1,23 @@
 # Todo Seite für Website
 
 ## Dropdown menu
-- Schrift auf dem Button schwarz machen
-- Navigation zu services Seite richtig verlinken
+<!-- - Schrift auf dem Button schwarz machen -->
+<!-- - Navigation zu services Seite richtig verlinken -->
+<!-- - dropdonmenu entfernt -->
 
 ## Anmeldeseite
-- !Auswahl der Gruppe über Buttons 
+<!-- - !Auswahl der Gruppe über Buttons  -->
 
 ## Spiele
 - Spielbeschreibungen hinzufügen
 
+## Quiz
+- Quizbeschreibungen hinzufügen
+- Bild hinzufügen, das skalierbar ist
+
 ## Navigation
-- bei navigate to next page wird zuerst currentPageIndex hochgezählt 
-    -> Gruppe 3 geht zuerst zu Station 4, das ist ungeschickt
+<!-- - bei navigate to next page wird zuerst currentPageIndex hochgezählt 
+    -> Gruppe 3 geht zuerst zu Station 4, das ist ungeschickt -->
+
+## Ende Seite:
+<!-- - navigation zur Startseite ermöglichen? Nein -->
