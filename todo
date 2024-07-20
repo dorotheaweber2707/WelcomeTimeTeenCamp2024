@@ -21,3 +21,13 @@
 
 ## Ende Seite:
 <!-- - navigation zur Startseite ermöglichen? Nein -->
+
+
+- navigation zu allen Seiten
+- Gruppenauswahl über Buttons
+- Rätsel eingebaut für alle Stationen
+
+ was noch fehlt:
+ - radiobuttons schön machen
+ - <p> ist manchmal ein bisschen hässlich bei den Rätseln
+ - Stationenbschreibungen und Rätselbeschreibungen hinzufügen
