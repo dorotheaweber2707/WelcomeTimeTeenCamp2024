@@ -794,7 +794,7 @@
     background-color: var(--fourth-color);
   }
 
-  /* Custom styles for radio buttons and layout */
+/* Custom styles for radio buttons and layout */
 #choices {
   margin: 20px 0;
 }
@@ -831,3 +831,7 @@
 .left-align {
   text-align: left;
 }
+
+
+
+
