@@ -10,6 +10,7 @@ const ANSWER_QUIZ_3 = 3
 const ANSWER_QUIZ_4 = 2
 const ANSWER_QUIZ_5 = 0
 const ANSWER_QUIZ_6 = 0
+const ANSWER_QUIZ_7 = 3
 
 const correct_answer = {
     1: ANSWER_QUIZ_1,
@@ -17,16 +18,18 @@ const correct_answer = {
     3: ANSWER_QUIZ_3,
     4: ANSWER_QUIZ_4,
     5: ANSWER_QUIZ_5,
-    6: ANSWER_QUIZ_6
+    6: ANSWER_QUIZ_6,
+    7: ANSWER_QUIZ_7
 }
 
 const laufbeschreibung = {
     1: "",
     2: "Geht ins große Zelt. \nDort ist eure nächste Station.",
     3: "Geht zur Mitte des Fußballplatztes. \nDort ist eure nächste Station.",
-    4: "Geht zur Wiese unter dem Essenszelt. \nDort ist eure nächste Station",
+    4: "Geht zur Wiese unter dem Essenszelt. \nDort ist eure nächste Station.",
     5: "",
-    6: "Geht zum Essenszelt. \nDort ist eure nächste Station."
+    6: "Geht zum Essenszelt. \nDort ist eure nächste Station.",
+    7: "Geht auf die Terasse vor der Küche. \Dort ist eure nächste Station."
 }
 
 
