@@ -4,12 +4,12 @@
 // und anschließend den Button zum Weiterklicken sichtbar macht
 // eingaben immer nur über multiple choice, damit es keine Fehler bei der Eingabe gibt :)
 
-const ANSWER_QUIZ_1 = 1
-const ANSWER_QUIZ_2 = 1
-const ANSWER_QUIZ_3 = 1
-const ANSWER_QUIZ_4 = 1
-const ANSWER_QUIZ_5 = 1
-const ANSWER_QUIZ_6 = 1
+const ANSWER_QUIZ_1 = 0
+const ANSWER_QUIZ_2 = 3
+const ANSWER_QUIZ_3 = 3
+const ANSWER_QUIZ_4 = 2
+const ANSWER_QUIZ_5 = 0
+const ANSWER_QUIZ_6 = 0
 
 const correct_answer = {
     1: ANSWER_QUIZ_1,
@@ -24,7 +24,7 @@ const laufbeschreibung = {
     1: "",
     2: "Geht ins große Zelt. \nDort ist eure nächste Station.",
     3: "Geht zur Mitte des Fußballplatztes. \nDort ist eure nächste Station.",
-    4: "",
+    4: "Geht zur Wiese unter dem Essenszelt. \nDort ist eure nächste Station",
     5: "",
     6: "Geht zum Essenszelt. \nDort ist eure nächste Station."
 }
@@ -65,7 +65,7 @@ function displayAnswer(quiznumber) {
 }
 
 function displayWrongAnswer(){
-    document.getElementById('falseAnswer').innerText = "Falsche Antwort :(";
+    document.getElementById('falseAnswer').innerText = "Falsche Antwort :(\n\n";
 }
 
 function disableChoices() {

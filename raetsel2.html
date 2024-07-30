@@ -35,17 +35,34 @@
         <h1>Rätsel&shy;beschreibung</h1>
 
         <p>Die folgenden Emojis beschreiben eine Bibelgeschichte <br> <br></p>
-        
-        <h1>Auswahl</h1>
+
+        <div class="responsive-img-container">
+          <img src="images/emoji-raetsel.png" alt="Beschreibung des Bildes">
+        </div>
 
         <p> Löse das Rätsel und wähle die richtige Antwort aus. <br> <br>
 
+        <h1>Auswahl</h1>
+
         <p id="falseAnswer"></p>
         <div id="choices">
-          <label><input type="radio" name="answer" value="1"> David, Jesus, Mose, Eva</label>
-          <label><input type="radio" name="answer" value="2"> Antwort 2</label>
-          <label><input type="radio" name="answer" value="3"> Antwort 3</label>
-          <label><input type="radio" name="answer" value="4"> Antwort 4</label>
+          <label><input type="radio" name="answer" value="1">
+            Moses Auszug aus Ägypten, Versorgung des Volkes durch Gott in der Wüstung, Anbetung des goldenen Schweines
+            durch das Volk und deren Verbannung aus deren Heimat.
+          </label>
+          <label><input type="radio" name="answer" value="2">
+            König Salomons Reichtum, Weisheit und Gottesfürchtigkeit, am Beispiel seines weisen Urteils über die
+            (Schwert-)Teilung eines Schweines von zwei Frauen, die eigentlich zwei in deren Haus hatten.
+          </label>
+          <label><input type="radio" name="answer" value="3">
+            Gleichnis des Sohnes der sich sein Erbe auszahlt, es verprasst und Schweinen zu hüten hat, bevor er nach
+            Haus zurückkehrt und dort vom Vater mit offenen Armen aufgenommen wird.
+          </label>
+          <label><input type="radio" name="answer" value="4">
+            Gottes Prüfung an Abraham, dass er sich als würdiger und gottesfürchtiger Anführer beweist und seine
+            Nachfahren (Volk Israel) in Wohlstand und Frieden leben werden, muss er sein geliebtes Schwein opfern.
+            Jedoch greift Gott ein und beide können wieder Nachhause gehen.
+          </label>
         </div>
 
         <button class="back__btn" onclick="checkAnswer(2)" id="checkButton">Check Answer</button>
